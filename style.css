@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
+  list-style-type: none;
 }
 .container {
   margin: 0px 166px;
@@ -447,6 +448,7 @@ body {
 }
 .cook-content {
   display: flex;
+  align-items: center;
   justify-content: space-around;
 }
 .cook {
