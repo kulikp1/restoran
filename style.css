@@ -381,8 +381,10 @@ body {
 }
 .comment {
   background-color: #e5e5e5;
-  padding-top: 104px;
+  padding-top: 54px;
   padding-bottom: 139px;
+
+  height: 205.5px;
 }
 .comment-text {
   text-align: center;
@@ -392,6 +394,9 @@ body {
 }
 .comment-img {
   border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
 .comment-image {
   text-align: center;
