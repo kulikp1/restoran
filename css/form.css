@@ -282,3 +282,9 @@ checkbox:focus + .privacy-label .form-agreement-checkbox {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+  display: block;
+}
