@@ -1,18 +1,17 @@
 const orderButton = document.querySelector('.button');
 const closeButton = document.querySelector('.modal-btn');
-const form = document.querySelector('.form'); // Додано посилання на форму
-const inputs = form.querySelectorAll('input'); // Вибір усіх інпутів форми
+const form = document.querySelector('#order-form'); // Форма для перевірки
 
-orderButton.addEventListener('click', function(event) {
-    event.preventDefault(); 
-    if (validateForm()) {
-        openBackdrop(); 
+orderButton.addEventListener('click', function (event) {
+    {
+        openBackdrop();
+    
     }
 });
 
 closeButton.addEventListener('click', function(event) {
-    event.preventDefault(); 
-    closeBackdrop(); 
+    event.preventDefault();
+    closeBackdrop();
 });
 
 function openBackdrop() {
@@ -25,43 +24,43 @@ function closeBackdrop() {
     backdrop.classList.remove('is-open');
 }
 
+// Функція для валідації форми
 function validateForm() {
+    const nameInput = form.querySelector('[name="name"]'); // Приклад поля імені
+    const emailInput = form.querySelector('[name="email"]'); // Приклад поля електронної пошти
+    const phoneInput = form.querySelector('[name="phone"]'); // Приклад поля телефону
+
     let isValid = true;
 
-    inputs.forEach(input => {
-        const errorElement = input.nextElementSibling; // Припускаємо, що елемент для помилок знаходиться поруч
-        if (input.value.trim() === '') {
-            isValid = false;
-            showError(input, errorElement, 'Це поле обов\'язкове для заповнення');
-        } else if (input.type === 'email' && !isValidEmail(input.value)) {
-            isValid = false;
-            showError(input, errorElement, 'Введіть коректну email адресу');
-        } else {
-            clearError(input, errorElement);
-        }
-    });
+    // Перевірка поля імені
+    if (!nameInput.value.trim()) {
+        nameInput.classList.add('error');
+        isValid = false;
+    } else {
+        nameInput.classList.remove('error');
+    }
+
+    // Перевірка поля електронної пошти
+    if (!validateEmail(emailInput.value)) {
+        emailInput.classList.add('error');
+        isValid = false;
+    } else {
+        emailInput.classList.remove('error');
+    }
+
+    // Перевірка поля телефону (тільки цифри)
+    if (!/^\d{10}$/.test(phoneInput.value)) {
+        phoneInput.classList.add('error');
+        isValid = false;
+    } else {
+        phoneInput.classList.remove('error');
+    }
 
     return isValid;
 }
 
-function showError(input, errorElement, message) {
-    input.classList.add('input-error'); // Додаємо клас для стилізації помилки
-    if (errorElement) {
-        errorElement.textContent = message;
-        errorElement.classList.add('error-visible');
-    }
-}
-
-function clearError(input, errorElement) {
-    input.classList.remove('input-error');
-    if (errorElement) {
-        errorElement.textContent = '';
-        errorElement.classList.remove('error-visible');
-    }
-}
-
-function isValidEmail(email) {
-    // Простий шаблон для перевірки email
+// Функція для перевірки email
+function validateEmail(email) {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailPattern.test(email);
 }
