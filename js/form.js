@@ -1,15 +1,12 @@
-const orderButton = document.querySelector('.button');
-const closeButton = document.querySelector('.modal-btn');
-const form = document.querySelector('#order-form'); // Форма для перевірки
+const orderButton = document.querySelector('.button'); // Кнопка для відкриття модального вікна
+const closeButton = document.querySelector('.modal-btn'); // Кнопка для закриття модального вікна
+const form = document.querySelector('.modal-form'); // Форма для валідації
 
-orderButton.addEventListener('click', function (event) {
-    {
-        openBackdrop();
-    
-    }
+orderButton.addEventListener('click', function () {
+    openBackdrop();
 });
 
-closeButton.addEventListener('click', function(event) {
+closeButton.addEventListener('click', function (event) {
     event.preventDefault();
     closeBackdrop();
 });
@@ -26,9 +23,10 @@ function closeBackdrop() {
 
 // Функція для валідації форми
 function validateForm() {
-    const nameInput = form.querySelector('[name="name"]'); // Приклад поля імені
-    const emailInput = form.querySelector('[name="email"]'); // Приклад поля електронної пошти
-    const phoneInput = form.querySelector('[name="phone"]'); // Приклад поля телефону
+    const nameInput = form.querySelector('[name="name"]');
+    const emailInput = form.querySelector('[name="email"]');
+    const phoneInput = form.querySelector('[name="phone"]');
+    const privacyCheckbox = form.querySelector('[name="user-privacy"]');
 
     let isValid = true;
 
@@ -48,12 +46,23 @@ function validateForm() {
         emailInput.classList.remove('error');
     }
 
-    // Перевірка поля телефону (тільки цифри)
-    if (!/^\d{10}$/.test(phoneInput.value)) {
+    // Перевірка поля телефону
+    if (!/^\d{10}$/.test(phoneInput.value.trim())) {
         phoneInput.classList.add('error');
         isValid = false;
     } else {
         phoneInput.classList.remove('error');
+    }
+
+    // Перевірка чекбокса
+    if (!privacyCheckbox.checked) {
+        alert('Ви повинні прийняти умови Політики конфіденційності.');
+        isValid = false;
+    }
+
+    // Якщо форма не валідна, показати повідомлення
+    if (!isValid) {
+        alert('Будь ласка, заповніть всі поля правильно.');
     }
 
     return isValid;
@@ -64,3 +73,13 @@ function validateEmail(email) {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailPattern.test(email);
 }
+
+// Обробка події submit
+form.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    if (validateForm()) {
+        alert('Форма успішно відправлена!');
+        // Тут можна додати реальну відправку форми, якщо це потрібно
+    }
+});
