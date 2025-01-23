@@ -65,5 +65,6 @@ form.addEventListener('submit', function (event) {
 
     if (validateForm()) {
         alert('Форма успішно відправлена!');
+        closeBackdrop(); // Закриваємо модалку після успішного заповнення форми
     }
 });
