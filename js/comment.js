@@ -1,5 +1,3 @@
-// import { image, text, userName } from "./refs.js";
-
 const image = document.querySelector(".comment-img");
 const textEl = document.querySelector(".comment-text");
 const userName = document.querySelector(".comment-name");
