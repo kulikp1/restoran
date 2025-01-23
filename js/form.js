@@ -43,13 +43,6 @@ function validateForm() {
         emailInput.classList.remove('error');
     }
 
-    if (!/^\d{10}$/.test(phoneInput.value.trim())) {
-        phoneInput.classList.add('error');
-        isValid = false;
-    } else {
-        phoneInput.classList.remove('error');
-    }
-
     if (!privacyCheckbox.checked) {
         alert('Ви повинні прийняти умови Політики конфіденційності.');
         isValid = false;
