@@ -383,7 +383,8 @@ body {
   justify-content: center;
 }
 .comment {
-  background-color: #e5e5e5;
+  /* background-color: #e5e5e5; */
+  background-image: url(../img/footer.jpg);
   padding-top: 54px;
   padding-bottom: 139px;
 
