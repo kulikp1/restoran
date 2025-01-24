@@ -397,6 +397,8 @@ body {
   font-style: italic;
   margin-bottom: 20px;
   font-size: 20px;
+
+  color: #fff;
 }
 .comment-img {
   border-radius: 50px;
@@ -417,6 +419,8 @@ body {
   font-size: 20px;
   text-align: center;
   font-weight: 400;
+
+  color: #fff;
 }
 .galery-title {
   padding-top: 101px;
