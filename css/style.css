@@ -460,6 +460,22 @@ body {
 .cook-title span {
   color: #d67e34;
 }
+
+.cook-descr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+.cook-descr-title {
+  text-align: center;
+  font-family: "Tinos", serif;
+}
+.cook-descr-item {
+  text-align: center;
+  font-family: "Tinos", serif;
+}
 .cook-content {
   display: flex;
   align-items: center;
