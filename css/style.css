@@ -452,7 +452,7 @@ body {
 }
 .cook-title {
   padding-top: 100px;
-  padding-bottom: 107px;
+  padding-bottom: 27px;
   text-align: center;
   font-family: "Tinos", serif;
   font-size: 54px;
@@ -466,6 +466,8 @@ body {
   flex-direction: column;
   align-items: center;
   width: 300px;
+
+  /* background-color: #d67e34; */
 }
 
 .cook-descr-title {
