@@ -477,6 +477,7 @@ body {
 .cook-descr-item {
   text-align: center;
   font-family: "Tinos", serif;
+  font-size: 20px;
 }
 .cook-content {
   display: flex;
