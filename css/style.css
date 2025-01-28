@@ -66,6 +66,7 @@ body {
 .phone-holder {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
 .button {
