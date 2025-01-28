@@ -495,7 +495,7 @@ body {
 .footer-img {
   background-image: url(../img/footer.jpg);
   height: 532px;
-  padding-bottom: 100px;
+  /* padding-bottom: 100px; */
   background-repeat: no-repeat;
   background-size: cover;
 }
