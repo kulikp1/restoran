@@ -103,7 +103,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-/* .header-suptitle:before {
+/* .header-subtitle:before {
   position: absolute;
   content: "";
   height: 2px;
@@ -113,7 +113,7 @@ body {
   left: 308px;
 }
 
-.header-suptitle:after {
+.header-subtitle:after {
   position: absolute;
   content: "";
   height: 2px;
@@ -275,7 +275,9 @@ body {
 .right-btn:hover {
   background-color: #894b17;
 }
-
+.dishes {
+  margin-bottom: 139px;
+}
 .dishes-title {
   font-family: "Tinos", serif;
   font-size: 54px;
