@@ -103,17 +103,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-.header-suptitle:after {
-  position: absolute;
-  content: "";
-  height: 2px;
-  width: 61px;
-  background-color: #fff;
-  top: 127px;
-  left: 56px;
-}
-
-.header-suptitle:before {
+/* .header-suptitle:before {
   position: absolute;
   content: "";
   height: 2px;
@@ -122,6 +112,16 @@ body {
   top: 127px;
   left: 308px;
 }
+
+.header-suptitle:after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 61px;
+  background-color: #fff;
+  top: 127px;
+  left: 101px;
+} */
 
 .header-button {
   background-color: #ff7400;
