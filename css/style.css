@@ -60,6 +60,12 @@ body {
   color: #ff7400;
 }
 
+.phone {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
 .phone-text {
   font-size: 14px;
   color: #fff;
@@ -70,6 +76,11 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.phone_img_item {
+  width: 15px;
+  height: 15px;
 }
 
 .button {
