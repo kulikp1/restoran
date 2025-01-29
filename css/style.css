@@ -42,8 +42,11 @@ body {
 
 .cart-img {
   position: absolute;
+  width: 17px;
+  height: 17px;
   top: 18px;
   right: 7px;
+  /* margin-right: 5px; */
 }
 
 .num {
