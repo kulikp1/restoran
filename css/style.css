@@ -75,12 +75,13 @@ body {
 .phone-holder {
   display: flex;
   align-items: center;
-  gap: 10px;
+  /* gap: 10px; */
 }
 
 .phone_img_item {
   width: 15px;
   height: 15px;
+  display: none;
 }
 
 .button {
