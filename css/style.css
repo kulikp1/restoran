@@ -493,6 +493,7 @@ body {
 .cook-descr-title {
   text-align: center;
   font-family: "Tinos", serif;
+  margin-bottom: 0px;
 }
 .cook-descr-item {
   text-align: center;
