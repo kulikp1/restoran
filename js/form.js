@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const closeButton = document.querySelector('.modal-btn');
     const form = document.querySelector('.modal-form');
     const backdrop = document.querySelector('.backdrop');
+    const header = document.querySelector('.headerLine'); // Отримуємо хедер
 
     // Функція для показу тостів
     function showToast(message, type = 'success') {
@@ -19,12 +20,20 @@ document.addEventListener("DOMContentLoaded", function () {
     // Відкриття модального вікна
     orderButton.addEventListener('click', function () {
         backdrop.classList.add('is-open');
+        document.body.style.overflow = 'hidden'; // Відключаємо прокрутку сторінки
+        if (header) {
+            header.style.display = 'none'; // Відкріплюємо хедер
+        }
     });
 
     // Закриття модального вікна
     closeButton.addEventListener('click', function (event) {
         event.preventDefault();
         backdrop.classList.remove('is-open');
+        document.body.style.overflow = ''; // Відновлюємо прокрутку сторінки
+        if (header) {
+            header.style.display = 'flex'; // Знову закріплюємо хедер
+        }
     });
 
     // Функція валідації форми
@@ -74,6 +83,10 @@ document.addEventListener("DOMContentLoaded", function () {
         if (validateForm()) {
             showToast('Форма успішно відправлена!');
             backdrop.classList.remove('is-open'); // Закриваємо модальне вікно
+            document.body.style.overflow = ''; // Відновлюємо прокрутку сторінки
+            if (header) {
+                header.style.position = 'fixed'; // Знову закріплюємо хедер
+            }
         }
     });
 });
