@@ -15,7 +15,8 @@ body {
 }
 
 .header-line {
-  padding-top: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   display: flex;
   align-items: center;
   justify-content: space-around;
