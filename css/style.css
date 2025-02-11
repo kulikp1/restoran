@@ -202,9 +202,18 @@ body {
   font-weight: 400px;
   color: #656363;
 }
+
 .cards-holder {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+}
+
+@media (min-width: 440px) {
+  .cards-holder {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
 }
 
 .card-title span {
