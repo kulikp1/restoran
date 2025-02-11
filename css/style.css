@@ -8,12 +8,17 @@ body {
   padding-top: 80px; /* Добавь отступ, чтобы контент не прилипал к хедеру */
 }
 .header {
-  background-image: url(../img/bg.jpg);
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
+  display: none;
 }
-
+@media (min-width: 440px) {
+  .header {
+    background-image: url(../img/bg.jpg);
+    display: block;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 .headerLine {
   padding-top: 25px;
   padding-bottom: 25px;
