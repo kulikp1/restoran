@@ -222,6 +222,15 @@ body {
   margin-left: 2px;
 }
 
+.imgages-1 {
+  display: none;
+}
+
+@media (min-width: 440px) {
+  .imgages-1 {
+    display: block;
+  }
+}
 .history-title {
   font-family: "Tinos", serif;
   font-size: 54px;
