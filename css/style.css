@@ -307,6 +307,23 @@ body {
   font-weight: 700px;
 }
 
+.blackContainer {
+  margin: 0px 166px;
+}
+.block-holder {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+@media (min-width: 440px) {
+  .block-holder {
+    flex-direction: row;
+  }
+}
 .right-btn {
   background-color: #ff7400;
   color: #fff;
@@ -315,13 +332,6 @@ body {
   font-weight: 700;
   transition: background-color 0.3s linear;
 }
-
-.block-holder {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .right-btn:hover {
   background-color: #894b17;
 }
