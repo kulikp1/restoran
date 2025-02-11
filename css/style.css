@@ -213,6 +213,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: row;
+    padding-top: 50px;
   }
 }
 
