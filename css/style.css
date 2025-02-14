@@ -413,10 +413,16 @@ body {
 .menu-item {
   background-color: #fff;
   text-align: center;
-  width: 33%;
+
   padding-top: 80px;
   padding-bottom: 50px;
   margin-right: 20px;
+}
+
+@media (min-width: 440px) {
+  .menu-item {
+    width: 33%;
+  }
 }
 
 .menu-text {
