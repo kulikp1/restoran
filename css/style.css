@@ -356,6 +356,16 @@ body {
   justify-content: center;
 }
 
+.burgers-image {
+  display: none;
+}
+
+@media (min-width: 440px) {
+  .burgers-image {
+    display: block;
+  }
+}
+
 .burgers-items {
   padding-left: 30px;
 }
