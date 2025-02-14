@@ -416,8 +416,15 @@ body {
   font-size: 54px;
   color: #fff;
   text-align: center;
-  padding-top: 98px;
-  padding-bottom: 138px;
+  padding-top: 48px;
+  padding-bottom: 68px;
+}
+
+@media (min-width: 440px) {
+  .menu-title {
+    padding-top: 98px;
+    padding-bottom: 138px;
+  }
 }
 
 .menu-items {
@@ -441,14 +448,16 @@ body {
   text-align: center;
   width: 75%;
 
-  padding-top: 80px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 @media (min-width: 440px) {
   .menu-item {
     width: 33%;
     margin-right: 20px;
+    padding-top: 80px;
+    padding-bottom: 50px;
   }
 }
 
@@ -463,6 +472,18 @@ body {
   font-size: 16px;
 
   margin-bottom: 20px;
+}
+
+.menu-img {
+  width: 150px;
+  height: 150px;
+}
+
+@media (min-width: 440px) {
+  .menu-img {
+    width: 225px;
+    height: 225px;
+  }
 }
 
 .menu-btn {
