@@ -372,9 +372,17 @@ body {
 
 .burger-item {
   display: flex;
+  flex-direction: column;
   align-items: center;
   padding-bottom: 29px;
 }
+
+@media (min-width: 440px) {
+  .burger-item {
+    flex-direction: row;
+  }
+}
+
 .burger {
   padding-right: 30px;
 }
