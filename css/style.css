@@ -569,7 +569,12 @@ body {
   margin-bottom: 34px;
   font-size: 20px;
 
-  color: #fff;
+  color: #000;
+}
+@media (min-width: 440px) {
+  .comment-text {
+    color: #fff;
+  }
 }
 
 .galery-title {
