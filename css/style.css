@@ -521,27 +521,19 @@ body {
 }
 
 .comment-container {
-  background-image: url(../img/footer.jpg);
+  color: #000;
   margin-top: 100px;
 }
 
 @media (min-width: 440px) {
   .comment-container {
+    background-image: url(../img/footer.jpg);
     padding-top: 78px;
     padding-bottom: 139px;
-
     height: 205.5px;
   }
 }
 
-.comment-text {
-  text-align: center;
-  font-style: italic;
-  margin-bottom: 34px;
-  font-size: 20px;
-
-  color: #fff;
-}
 .comment-img {
   border-radius: 50px;
   width: 100px;
@@ -562,8 +554,24 @@ body {
   text-align: center;
   font-weight: 400;
 
+  color: #000000;
+}
+
+@media (min-width: 440px) {
+  .comment-name {
+    color: #fff;
+  }
+}
+
+.comment-text {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 34px;
+  font-size: 20px;
+
   color: #fff;
 }
+
 .galery-title {
   padding-top: 101px;
   font-family: "Tinos", serif;
