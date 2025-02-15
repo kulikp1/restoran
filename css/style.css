@@ -203,6 +203,16 @@ body {
   color: #656363;
 }
 
+.cards-container {
+  padding-top: 80px; /* Добавь отступ, чтобы контент не прилипал к хедеру */
+}
+
+@media (min-width: 440px) {
+  .cards-container {
+    margin: 0px 166px;
+  }
+}
+
 .cards-holder {
   display: flex;
   flex-direction: column;
