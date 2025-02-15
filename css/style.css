@@ -520,16 +520,20 @@ body {
   font-size: 30px;
 }
 
-.comment {
-  /* background-color: #e5e5e5; */
+.comment-container {
   background-image: url(../img/footer.jpg);
-  padding-top: 78px;
-  padding-bottom: 139px;
-
-  height: 205.5px;
-
   margin-top: 100px;
 }
+
+@media (min-width: 440px) {
+  .comment-container {
+    padding-top: 78px;
+    padding-bottom: 139px;
+
+    height: 205.5px;
+  }
+}
+
 .comment-text {
   text-align: center;
   font-style: italic;
