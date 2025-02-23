@@ -622,6 +622,7 @@ body {
   justify-content: space-between;
   margin-bottom: 20px;
 }
+
 .cook-title {
   padding-top: 30px;
   padding-bottom: 27px;
@@ -663,11 +664,25 @@ body {
   font-family: "Tinos", serif;
   font-size: 20px;
 }
+
 .cook-content {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  gap: 20px;
 }
+
+@media (min-width: 440px) {
+  .cook-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0px;
+  }
+}
+
 .cook {
   padding-bottom: 100px;
 }
