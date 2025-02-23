@@ -296,7 +296,12 @@ body {
   width: 444px;
   justify-content: center;
   margin-top: 40px;
-  margin-left: 30px;
+}
+
+@media (min-width: 440px) {
+  .history-number {
+    margin-left: 30px;
+  }
 }
 
 .number-item {
@@ -314,6 +319,10 @@ body {
 .history-holder {
   display: flex;
   justify-content: space-between;
+}
+
+.history-desc {
+  padding: 0 20px 0 20px;
 }
 
 .history-images {
