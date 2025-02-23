@@ -587,13 +587,25 @@ body {
   }
 }
 
+.galery {
+  display: none;
+}
+
+@media (min-width: 440px) {
+  .galery {
+    display: block;
+  }
+}
+
 .galery-title {
+  display: block;
   padding-top: 101px;
   font-family: "Tinos", serif;
   font-size: 54px;
   text-align: center;
   margin-bottom: 60px;
 }
+
 .galery-title span {
   color: #d67e34;
 }
