@@ -241,6 +241,17 @@ body {
     display: block;
   }
 }
+
+.history-container {
+  /* margin: 0px 166px; */
+  padding-top: 80px; /* Добавь отступ, чтобы контент не прилипал к хедеру */
+}
+@media (min-width: 440px) {
+  .history-container {
+    margin: 0px 166px;
+    padding-top: 80px; /* Добавь отступ, чтобы контент не прилипал к хедеру */
+  }
+}
 .history-title {
   font-family: "Tinos", serif;
   font-size: 54px;
