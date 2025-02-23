@@ -390,8 +390,14 @@ body {
   font-size: 54px;
   font-weight: 400;
   text-align: center;
-  padding-top: 132px;
-  padding-bottom: 139px;
+  padding-bottom: 39px;
+}
+
+@media (min-width: 440px) {
+  .dishes-title {
+    padding-top: 72px;
+    padding-bottom: 139px;
+  }
 }
 
 .dishes-title span {
