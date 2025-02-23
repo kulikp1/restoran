@@ -282,8 +282,18 @@ body {
 .history-desc {
   color: #656363;
   font-size: 16px;
-  width: 444px;
+  max-width: 350px;
   text-align: center;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 440px) {
+  .history-desc {
+    max-width: 444px;
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 .history {
@@ -319,10 +329,6 @@ body {
 .history-holder {
   display: flex;
   justify-content: space-between;
-}
-
-.history-desc {
-  padding: 0 20px 0 20px;
 }
 
 .history-images {
