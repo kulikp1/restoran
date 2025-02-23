@@ -623,12 +623,23 @@ body {
   margin-bottom: 20px;
 }
 .cook-title {
-  padding-top: 100px;
+  padding-top: 30px;
   padding-bottom: 27px;
   text-align: center;
   font-family: "Tinos", serif;
   font-size: 54px;
 }
+
+@media (min-width: 440px) {
+  .cook-title {
+    padding-top: 100px;
+    padding-bottom: 27px;
+    text-align: center;
+    font-family: "Tinos", serif;
+    font-size: 54px;
+  }
+}
+
 .cook-title span {
   color: #d67e34;
 }
