@@ -172,10 +172,21 @@ body {
 .card {
   box-shadow: 10px 10px 40px 20px #0000001a;
   width: 349px;
-  margin-right: 31px;
   background-color: #fff;
   margin-top: -80px;
   padding: 10px 10px;
+  margin: 0px;
+}
+
+@media (min-width: 440px) {
+  .card {
+    box-shadow: 10px 10px 40px 20px #0000001a;
+    width: 349px;
+    margin-right: 31px;
+    background-color: #fff;
+    margin-top: -80px;
+    padding: 10px 10px;
+  }
 }
 
 .card-image {
@@ -216,6 +227,7 @@ body {
 .cards-holder {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 @media (min-width: 440px) {
@@ -224,6 +236,8 @@ body {
     justify-content: center;
     flex-direction: row;
     padding-top: 50px;
+
+    align-items: normal;
   }
 }
 
