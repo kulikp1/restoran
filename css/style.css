@@ -306,6 +306,9 @@ body {
   width: 444px;
   justify-content: center;
   margin-top: 40px;
+
+  justify-content: center;
+  gap: 60px;
 }
 
 @media (min-width: 440px) {
@@ -315,7 +318,7 @@ body {
 }
 
 .number-item {
-  margin-right: 60px;
+  /* margin-right: 60px; */
   text-align: center;
   font-size: 40px;
   color: #bc9060;
