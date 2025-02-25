@@ -355,8 +355,14 @@ body {
 }
 
 .blackContainer {
-  margin: 0px 166px;
 }
+
+@media (min-width: 440px) {
+  .blackContainer {
+    margin: 0px 166px;
+  }
+}
+
 .block-holder {
   display: flex;
   flex-direction: column;
