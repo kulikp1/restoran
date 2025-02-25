@@ -228,6 +228,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 30px;
 }
 
 @media (min-width: 440px) {
@@ -236,6 +237,7 @@ body {
     justify-content: center;
     flex-direction: row;
     padding-top: 50px;
+    gap: 0px;
 
     align-items: normal;
   }
