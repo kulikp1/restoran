@@ -504,7 +504,7 @@ body {
 
 .menu-items {
   display: flex;
-  gap: 20px;
+  gap: 40px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -512,9 +512,10 @@ body {
 
 @media (min-width: 440px) {
   .menu-items {
-    display: flex;
+    /* display: flex; */
     flex-direction: row;
     justify-content: center;
+    gap: 20px;
   }
 }
 
