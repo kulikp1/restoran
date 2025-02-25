@@ -338,7 +338,13 @@ body {
 
 .black-block {
   background-image: url(../img/black-bg.jpg);
-  padding: 80px 0;
+  padding: 80px 40px;
+}
+
+@media (min-width: 440px) {
+  .black-block {
+    padding: 80px 0;
+  }
 }
 
 .left-title {
