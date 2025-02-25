@@ -599,6 +599,7 @@ body {
 .comment-container {
   color: #000;
   margin-top: 100px;
+  padding: 0px 40px;
 }
 
 @media (min-width: 440px) {
